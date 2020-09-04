@@ -4,14 +4,18 @@ class Waiter {
         this.orders = [];
         this.actionMap = {
             BakeChickenWingCommand(command) {
-                console.warn('No chicken wing, please ask something else!');
+                console.warn(`No chicken wing, please ask something else!`);
             },
             BakeMuttonCommand(command) {
                 this.orders.push(command);
-                console.info(`Order is added: ${command} @ ${new Date()}`);
+                console.info(`Order is added: ${command.constructor.name}:${command.id} @ ${new Date()}`);
             },
-            default(command) {
-                console.info(`Command ${command} strategy not found`);
+            BakeCornCommand(command) {
+                this.orders.push(command);
+                console.info(`Order is added: ${command.constructor.name}:${command.id} @ ${new Date()}`);
+            },
+            default(command){
+                console.info(`Command ${command.constructor.name} strategy not found`);
             }
         };
     }
@@ -23,6 +27,7 @@ class Waiter {
 
     cancelOrder(command) {
         this.orders = this.orders.filter(order => order.id === command.id);
+        console.info(`Order is cancelled: ${command.constructor.name}:${command.id}`);
     }
 
     notifyReceiver() {

@@ -1,18 +1,14 @@
 function Barbecuer() {
-
-    function bakeMutton() {
-        console.info('Bake mutton!');
-    }
-
-    function bakeChickenWing() {
-        console.info('Bake chicken wing!');
-    }
-
-    return {
-        bakeMutton,
-        bakeChickenWing
-    };
-
 }
+
+Barbecuer.prototype.bakeMutton = function() {
+    console.info('Bake mutton!');
+};
+Barbecuer.prototype.bakeChickenWing = function() {
+    console.info('Bake chicken wing!');
+};
+Barbecuer.prototype.bakeCorn = function() {
+    console.info('Bake corn!');
+};
 
 module.exports = Barbecuer;

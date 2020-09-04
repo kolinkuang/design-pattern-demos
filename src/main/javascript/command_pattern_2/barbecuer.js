@@ -8,6 +8,10 @@ class Barbecuer {
         console.info('Bake chicken wing!');
     }
 
+    bakeCorn() {
+        console.info('Bake corn!');
+    }
+
 }
 
 module.exports = Barbecuer;
