@@ -4,7 +4,6 @@ function PatchHandlerV3(preferenceAgent) {
 }
 
 function patchV3(userPreference) {
-    console.info('Patching in V3...');
     return userPreference;
 }
 

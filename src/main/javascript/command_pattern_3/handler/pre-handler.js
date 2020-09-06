@@ -12,7 +12,7 @@ function backupPreference(userId, rawPrefData) {
 
 PreHandler.prototype.handlePatch = function (userId) {
     const userPreference = this.preferenceAgent.getUserPreference(userId);
-    backupPreference(userId, userPreference);
+    backupPreference.call(this, userId, userPreference);
 };
 
 module.exports = PreHandler;
