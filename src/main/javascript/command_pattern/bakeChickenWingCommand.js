@@ -6,6 +6,7 @@ function BakeChickenWingCommand(receiver) {
     this.receiver = receiver;
 }
 
+//复制而不是直接引用父类原型对象
 BakeChickenWingCommand.prototype = Object.create(Command.prototype);
 BakeChickenWingCommand.prototype.constructor = BakeChickenWingCommand;
 BakeChickenWingCommand.prototype.executeCommand = function () {

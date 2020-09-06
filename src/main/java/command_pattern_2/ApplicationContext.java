@@ -10,7 +10,7 @@ public class ApplicationContext {
 
     private Alert alert;
 
-    public void initializeBeans() {
+    private void initializeBeans() {
         // 负责组装 handler 与中介
 
         /*.省略参数.*/
