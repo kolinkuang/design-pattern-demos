@@ -1,5 +1,4 @@
 function PreHandler(preferenceAgent) {
-    this.version = 0;
     this.preferenceAgent = preferenceAgent;
 }
 

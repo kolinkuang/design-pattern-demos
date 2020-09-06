@@ -1,5 +1,4 @@
 function PostHandler(preferenceAgent) {
-    this.version = 1000;
     this.preferenceAgent = preferenceAgent;
 }
 
