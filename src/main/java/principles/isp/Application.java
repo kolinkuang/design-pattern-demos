@@ -1,11 +1,11 @@
-package isp;
+package principles.isp;
 
-import isp.config.KafkaConfig;
-import isp.config.MySqlConfig;
-import isp.config.RedisConfig;
-import isp.scheduler.ScheduledUpdater;
-import isp.source.ConfigSource;
-import isp.source.ZookeeperConfigSource;
+import principles.isp.config.KafkaConfig;
+import principles.isp.config.MySqlConfig;
+import principles.isp.config.RedisConfig;
+import principles.isp.scheduler.ScheduledUpdater;
+import principles.isp.source.ConfigSource;
+import principles.isp.source.ZookeeperConfigSource;
 
 public class Application {
 

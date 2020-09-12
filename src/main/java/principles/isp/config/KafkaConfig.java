@@ -1,6 +1,6 @@
-package isp.config;
+package principles.isp.config;
 
-import isp.source.ConfigSource;
+import principles.isp.source.ConfigSource;
 
 public class KafkaConfig implements Updater {
 

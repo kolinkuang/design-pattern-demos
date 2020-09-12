@@ -1,4 +1,4 @@
-package isp.source;
+package principles.isp.source;
 
 public class ZookeeperConfigSource implements ConfigSource {
 

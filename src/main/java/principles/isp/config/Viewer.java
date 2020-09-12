@@ -1,4 +1,4 @@
-package isp.config;
+package principles.isp.config;
 
 import java.util.Map;
 

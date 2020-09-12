@@ -1,6 +1,6 @@
-package isp;
+package principles.isp;
 
-import isp.config.Viewer;
+import principles.isp.config.Viewer;
 
 import java.util.ArrayList;
 import java.util.HashMap;

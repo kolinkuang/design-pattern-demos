@@ -1,20 +1,19 @@
-package isp.config;
+package principles.isp.config;
 
-import isp.source.ConfigSource;
+import principles.isp.source.ConfigSource;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class MySqlConfig implements Viewer {
+public class RedisConfig implements Updater, Viewer {
 
     private final ConfigSource configSource; //配置中心（比如zookeeper）
     private String address;
     private int timeout;
     private int maxTotal;
 
-    public MySqlConfig(ConfigSource configSource) {
+    public RedisConfig(ConfigSource configSource) {
         this.configSource = configSource;
-        init();
     }
 
     public String getAddress() {
@@ -29,10 +28,13 @@ public class MySqlConfig implements Viewer {
         return maxTotal;
     }
 
-    private void init() {
+    @Override
+    public void update() {
+        //从 configSource 加载配置到address/timeout/maxTotal...
         address = configSource.getAddress();
         timeout = configSource.getTimeout();
         maxTotal = configSource.getMaxTotal();
+        System.out.printf("Redis config update is done: address=%s, timeout=%s, maxTotal=%s\n", this.getAddress(), this.getTimeout(), this.getMaxTotal());
     }
 
     @Override

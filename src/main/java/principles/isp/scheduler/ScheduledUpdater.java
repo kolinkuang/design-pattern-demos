@@ -1,6 +1,6 @@
-package isp.scheduler;
+package principles.isp.scheduler;
 
-import isp.config.Updater;
+import principles.isp.config.Updater;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
