@@ -1,4 +1,4 @@
-package generic_framework;
+package generic_framework.v1;
 
 import java.util.concurrent.TimeUnit;
 
