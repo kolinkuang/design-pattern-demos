@@ -1,6 +1,6 @@
-package principles.lod.v1;
+package principles.lod.sample1.v1;
 
-import principles.lod.Html;
+import principles.lod.sample1.Html;
 
 public class Document {
 

@@ -1,4 +1,4 @@
-package principles.lod.v11;
+package principles.lod.sample2.v2;
 
 public class Serializer {
 

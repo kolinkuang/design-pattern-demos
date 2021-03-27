@@ -1,4 +1,4 @@
-package principles.lod;
+package principles.lod.sample1;
 
 public class HtmlRequest {
 

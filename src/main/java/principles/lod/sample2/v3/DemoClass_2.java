@@ -1,4 +1,4 @@
-package principles.lod.v12;
+package principles.lod.sample2.v3;
 
 public class DemoClass_2 {
 

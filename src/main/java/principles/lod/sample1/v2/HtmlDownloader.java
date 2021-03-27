@@ -1,7 +1,7 @@
-package principles.lod.v2;
+package principles.lod.sample1.v2;
 
-import principles.lod.Html;
-import principles.lod.HtmlRequest;
+import principles.lod.sample1.Html;
+import principles.lod.sample1.HtmlRequest;
 
 public class HtmlDownloader {
 
